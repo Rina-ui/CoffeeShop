@@ -1,0 +1,2 @@
+C:/Users/HP/StudioProjects/coffee/CoffeeShop/android/app/.cxx/Debug/21a2s162/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/HP/StudioProjects/coffee/CoffeeShop/android/app/.cxx/Debug/21a2s162/armeabi-v7a/CMakeFiles/rebuild_cache.dir
