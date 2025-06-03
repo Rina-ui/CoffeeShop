@@ -1,3 +1,4 @@
+import 'package:coffeeshop/views/SignUp.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatelessWidget {
@@ -11,17 +12,27 @@ class SignIn extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 10),
+            SizedBox(height: 50),
             Row(children: [
-              SizedBox(width: 56,height: 100,),
-              Text("Sign in", style: TextStyle(fontSize: 35,
-                  fontWeight: FontWeight.w500,
+              Container(
+                width: 50,
+              ),
+              Text("Sign in", style: TextStyle(fontWeight: FontWeight.w500,
+                  fontSize: 22,
+                  letterSpacing: 0,
+                  fontFamily: 'Poppins',
                   color: Color(0xFF181D2D)),),]),
+            SizedBox(height: 20 ,),
             Row(children: [
-              SizedBox(width: 56,height: 0,),
+             Container(
+               width: 50,
+             ),
               Text("Welcome back",style:TextStyle(
-                fontSize: 25,
-                color: Color(0xFFAAAAAA),
+                  fontFamily: 'Poppins',
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 0,
+                  color: Color(0xFFAAAAAA)
               ),)
             ],
             ),
@@ -101,15 +112,16 @@ class SignIn extends StatelessWidget {
                        child: Text("Forgot Password?",
                          style: TextStyle(
                            decoration: TextDecoration.underline,
-                           fontSize: 18,
-                           color: Color(0xFF324A59)
+                           fontSize: 15,
+                           color: Color(0xFF324A59),
+                           fontWeight: FontWeight.w500,
                        ),),
                  ),
                   SizedBox(height: 80,),
                   GestureDetector(
                     onTap: (){
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => SignIn() ));
+                          MaterialPageRoute(builder: (context) => Signup() ));
                     },
                     child:  Row(
                       children: [
@@ -128,12 +140,14 @@ class SignIn extends StatelessWidget {
                     children: [
                       SizedBox(width: 15,),
                       Text("New member?",style: TextStyle(
-                        fontSize: 15,
-                        color: Color(0xFFAAAAAA)
+                        fontSize: 14,
+                        color: Color(0xFFAAAAAA),
+                        fontWeight: FontWeight.w400,
                       ),),
                       Text("Sign up",style: TextStyle(
-                        fontSize: 18,
-                        color: Color(0xFF324A59)
+                        fontSize: 14,
+                        color: Color(0xFF324A59),
+                        fontWeight: FontWeight.w500,
                       ),)
                     ],
                   )
