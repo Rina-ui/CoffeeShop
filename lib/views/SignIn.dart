@@ -1,6 +1,8 @@
 import 'package:coffeeshop/views/SignUp.dart';
 import 'package:flutter/material.dart';
 
+import 'StartUp_screen.dart';
+
 class SignIn extends StatelessWidget {
   const SignIn({super.key});
 

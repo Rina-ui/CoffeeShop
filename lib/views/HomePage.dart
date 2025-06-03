@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                           backgroundColor: Color(0xFF324A59),
                           child: Icon(Icons.arrow_forward, size: 40, color: Colors.white, ),
                         ),
-                        SizedBox(width: 10,),
+                        SizedBox(width: 30,),
                       ],
                     ),
                   ),
