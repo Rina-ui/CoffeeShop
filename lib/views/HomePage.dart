@@ -1,3 +1,4 @@
+import 'package:coffeeshop/views/SignIn.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,36 +22,30 @@ class _HomePageState extends State<HomePage> {
             child: Container(
               width: double.infinity,
               color: Color(0xFF324A59),
-              child: SingleChildScrollView(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Stack(
-                      children: [
-                        Image.asset(
-                          'assets/images/coffeeImage.png',
-                          width: 657,
-                          fit: BoxFit.cover,
-                        ),
-                        Positioned(
-                          bottom: 20,
-                            top: 250,
-                            left: 90,
-                            child: Text(
-                              "Magic Coffee",
-                              style: TextStyle(
-                                fontSize: 40,
-                                fontWeight: FontWeight.w300,
-                                color: Colors.white,
-                                fontFamily: "Reenie Beanie",
-                              ),
-                            ),
-                        )
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(25),
+                    child: Image.asset(
+                      'assets/images/coffeeImage.png',
+                      width: 200,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    child:  Text(
+                      "Magic Coffee",
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white,
+                        fontFamily: "Reenie Beanie",
+                      ),
+                    ),
+                  )
 
-                      ],
-                    )
-                  ]
-                ),
+                ]
               ),
 
             ),
@@ -115,18 +110,26 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                   SizedBox(height: 50,),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => SignIn() ));
+                    },
+                    child:  Row(
 
-                  Row(
-                    children: [
-                      Spacer(),
-                      CircleAvatar(
-                        radius: 40.0,
-                        backgroundColor: Color(0xFF324A59),
-                        child: Icon(Icons.arrow_forward, size: 40, color: Colors.white, ),
-                      ),
-                      SizedBox(width: 50,),
-                    ],
-                  )
+                      children: [
+                        Spacer(),
+
+                        CircleAvatar(
+                          radius: 40.0,
+                          backgroundColor: Color(0xFF324A59),
+                          child: Icon(Icons.arrow_forward, size: 40, color: Colors.white, ),
+                        ),
+                        SizedBox(width: 10,),
+                      ],
+                    ),
+                  ),
+
                 ]
               )
           )
