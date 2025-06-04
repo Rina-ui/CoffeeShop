@@ -1,3 +1,4 @@
+import 'package:coffeeshop/views/Forgotpassword.dart';
 import 'package:flutter/material.dart';
 
 class Signup extends StatefulWidget {
@@ -207,7 +208,7 @@ class _SignupState extends State<Signup> {
           GestureDetector(
             onTap: (){
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Signup() ));
+                  MaterialPageRoute(builder: (context) => ForgotPassword() ));
             },
             child:  Row(
               children: [
