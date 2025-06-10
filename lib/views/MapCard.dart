@@ -15,7 +15,7 @@ class _MapcardState extends State<Mapcard> {
     super.initState();
 
     //un delai pour naviger directement sur une autre page
-    Future.delayed(Duration(seconds: 10), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.push(
         context,
          MaterialPageRoute(builder: (context) => Mapcard())

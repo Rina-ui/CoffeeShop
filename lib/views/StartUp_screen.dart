@@ -14,7 +14,7 @@ class _ScreenState extends State<Screen> {
     super.initState();
 
     //un delai de 10 secondes et va ver la page Mapcard
-    Future.delayed(Duration(seconds: 10), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => Mapcard()),
